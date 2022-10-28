@@ -45,8 +45,7 @@ def threaded_client(conn, player):
                     reply=pos[0]
                 else:
                     reply=pos[1]
-                print("Received:",data)
-                print("sending: ",reply)
+                
             conn.sendall(str.encode(make_pos(reply)))
         
         except Exception as e:
